@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Product</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/product_main.css">
+	<link rel="stylesheet" type="text/css" href="css/product_responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.slim.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function () {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24)) - 500;
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Output the result in an element with id="demo"
+			document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+				+ minutes + "m " + seconds + "s ";
+
+			// If the count down is over, write some text 
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("timer").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
+
+</head>
+
+<body>
+	<!-- Header -->
+	<div class="super_container">
+		<header class="header">
+			<div class="header_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="header_content d-flex flex-row align-items-center justify-content-start">
+								<div class="logo"><a href="#">Sage; </a></div>
+								<nav class="main_nav">
+									<ul>
+										<li class="hassubs active">
+											<a href="home.html">Home</a> <span class="fas fa-angle-down"></span>
+											<ul>
+												<li><a href="categories.html">Categories</a></li>
+												<li><a href="product.html">Product</a></li>
+												<li><a href="cart.html">Cart</a></li>
+												<li><a href="checkout.html">Check out</a></li>
+											</ul>
+										</li>
+										<li class="hassubs">
+											<a href="categories.html">Categories</a> <span
+												class="fas fa-angle-down"></span>
+											<ul>
+												<li><a href="laptops.html">Laptops</a></li>
+												<li><a href="categories.html">Components</a></li>
+												<li><a href="handhelds.html">Handhelds</a></li>
+												<li><a href="categories.html">Software</a></li>
+											</ul>
+										</li>
+										<li><a href="offers.html">Offers</a></li>
+
+									</ul>
+								</nav>
+								<div class="header_extra ml-auto">
+									<div class="shopping_cart">
+										<a class="fas fa-shopping-cart" href="cart.html">
+											<div> Cart <span> (0) </span></div>
+										</a>
+									</div>
+									<div class="search">
+										<div class="search_icon fas fa-search">
+										</div>
+									</div>
+									<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Search Panel -->
+			<div class="search_panel trans_300">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="search_panel_content d-flex flex-row align-items-center justify-content-end">
+								<form action="#">
+									<input type="text" class="search_input" placeholder="Search" required="required">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Carousel -->
+
+
+		<div class="carousel">
+			<div id="carouselExampleCaptions" class="" data-ride="carousel"
+				style="margin-right: 45px; margin-left: 45px; ">
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<img src="images/smart/shopping2.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<div class="home_content">
+								<h5 class="home_title"> Cart. Pay. Deliver. </h5>
+								<p class="home_text" style="color: rgb(223, 223, 223);">All-screen design. Longest
+									battery life ever. Fastest
+									performance</p>
+							</div>
+						</div>
+					</div>
+					<div class="car_overlay"></div>
+				</div>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class='some-page-wrapper' onload="startTime()">
+			<div class='row' style="
+            margin-right: 5px;
+            margin-left: 5px;
+            ">
+				<div class='column'>
+					<div class='blue-column' style="
+                    margin-right: 3px;
+                    margin-left: 3px;
+                    ">
+						<span class="badge badge-pill badge-danger fas fa-shopping-bag shadow-lg "> 50% off: Jun 22-27
+							<div id="timer"></div> </span>
+					</div>
+				</div>
+				<div class='column' style="
+                margin-right: 3px;
+                margin-left: 3px;
+                ">
+					<div class='green-column'>
+
+					</div>
+				</div>
+				<div class='column' style="
+                margin-right: 3px;
+                margin-left: 3px;
+                ">
+					<div class='orange-column'>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- Products -->
+		<br> <br>
+		<div class="product_details">
+			<div class="container">
+				<div class="row details_row">
+
+					<!-- Product Image -->
+					<div class="col-lg-6">
+						<div class="details_image" id="grid">
+							<div class="details_image_large"><img id="big_image" src="../images/smart/no-cache.png" alt="">
+								<div class="product_extra product_new"><a href="categories.html">New</a></div>
+							</div>
+							<div
+								class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
+								<div class="details_image_thumbnail active" data-image="../images/smart/no-cache.png"><img
+										id="sm_image1" src="../images/smart/no-cache.png" alt=""></div>
+								<div class="details_image_thumbnail" data-image="../images/smart/no-cache.png"><img
+										id="sm_image2" src="../images/smart/no-cache.png" alt=""></div>
+								<div class="details_image_thumbnail" data-image="../images/smart/no-cache.png"><img
+										id="sm_image3" src="../images/smart/no-cache.png" alt=""></div>
+								<div class="details_image_thumbnail" data-image="../images/smart/no-cache.png"><img
+										id="sm_image4" src="../images/smart/no-cache.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product Content -->
+					<div class="col-lg-6">
+						<div class="details_content">
+							<div class="details_name">No product selected!</div>
+							<div class="details_discount"></div>
+							<div class="details_price"></div>
+
+							<!-- In Stock -->
+							<div class="in_stock_container">
+								<div class="availability">Availability:</div>
+								<span>In Stock</span>
+							</div>
+							<div class="details_text">
+								<p>The phone comes with a 5.00-inch touchscreen display with a resolution of 1080x1920
+									pixels at a pixel density of 441 pixels per inch (ppi). ... Google Pixel based on
+									Android 7.1 and packs 32GB of inbuilt storage. The Google Pixel is a single SIM
+									(GSM) smartphone that accepts a Nano-SIM card.</p>
+							</div>
+
+							<!-- Product Quantity -->
+							<div class="product_quantity_container">
+								<div class="product_quantity clearfix">
+									<span>Qty</span>
+									<input id="quantity_input" type="text" pattern="[0-9]*" value="1">
+									<div class="quantity_buttons">
+										<div id="quantity_inc_button" class="quantity_inc quantity_control"><i
+												class="fa fa-chevron-up" aria-hidden="true"></i></div>
+										<div id="quantity_dec_button" class="quantity_dec quantity_control"><i
+												class="fa fa-chevron-down" aria-hidden="true"></i></div>
+									</div>
+								</div>
+								<div class="button cart_button"><a href="#">Add to cart</a></div>
+							</div>
+
+							<!-- Share -->
+							<div class="details_share">
+								<span>Share:</span>
+								<ul>
+									<li><a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row description_row">
+					<div class="col">
+						<div class="description_title_container">
+							<div class="description_title">Description</div>
+							<div class="reviews_title"><a href="#">Reviews <span>(1)</span></a></div>
+						</div>
+						<div class="description_text">
+							<p>The phone comes with a 5.00-inch touchscreen display with a resolution of 1080x1920
+								pixels at a pixel density of 441 pixels per inch (ppi). ... Google Pixel based on
+								Android 7.1 and packs 32GB of inbuilt storage. The Google Pixel is a single SIM (GSM)
+								smartphone that accepts a Nano-SIM card.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="footer" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+						<h3> Shop and Learn </h3>
+						<ul>
+							<li> <a href="categories.html"> Components </a> </li>
+							<li> <a href="laptops.html"> Laptop </a> </li>
+							<li> <a href="handhelds.html"> Smart Phones </a> </li>
+							<li> <a href="categories.html"> Peripherals </a> </li>
+							<li> <a href="categories.html"> Software </a> </li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+						<h3> Accessories </h3>
+						<ul>
+							<li> <a href="#"> Gadgets </a> </li>
+							<li> <a href="#"> Cases </a> </li>
+						</ul>
+					</div>
+					<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+						<h3> About Sage; </h3>
+						<ul>
+							<li> <a href="#"> Investors </a> </li>
+							<li> <a href="#"> Events </a> </li>
+							<li> <a href="#"> Contact Sage </a> </li>
+						</ul>
+					</div>
+					<div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+						<h3> Create an account </h3>
+						<ul>
+							<li>
+								<div class="input-append newsletter-box text-center">
+									<input type="email" class="full text-center" placeholder="Email ">
+									<button class="btn  bg-gray" type="button" style="color: black"> SIGN UP <i
+											class="fa fa-long-arrow-right"> </i> </button>
+								</div>
+							</li>
+						</ul>
+						<ul class="social">
+							<li> <a href="#"> <i class=" fab fa-facebook">   </i> </a> </li>
+							<li> <a href="#"> <i class="fab fa-twitter">   </i> </a> </li>
+							<li> <a href="#"> <i class="fab fa-google-plus">   </i> </a> </li>
+							<li> <a href="#"> <i class="fab fa-pinterest">   </i> </a> </li>
+							<li> <a href="#"> <i class="fab fa-youtube">   </i> </a> </li>
+						</ul>
+					</div>
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.container-->
+		</div>
+		<!--/.footer-->
+
+		<div class="footer-bottom">
+			<div class="container">
+				<p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+				<div class="pull-right">
+					<ul class="nav nav-pills payments">
+						<li><i class="fab  fa-cc-visa"> &nbsp; </i></li>
+						<li><i class="fab fa-cc-mastercard"> &nbsp; </i></li>
+						<li><i class="fab fa-cc-amex"> &nbsp; </i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--/.footer-bottom-->
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.4.1.slim.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="packages/isotope/isotope.pkgd.min.js"></script>
+	<script src="packages/easing/easing.js"></script>
+	<script src="packages/parallax-js-master/parallax.min.js"></script>
+	<script>
+		// var $productImages = $('.product_image > img');
+		var $productImages = $('.add-cart');
+		$productImages.click(function () {
+			var $this = $(this);
+			var $product = $this.parents('.product');
+
+			var title = $product.find('.product_title > a').text();
+			var price = $product.find('.product_price').text();
+			var imgSource = $this.attr('src')
+			title = title.replace(/\s+/g, '-');
+			price = price.replace("$", '');
+			// all values are here, now you can do whatever you want with them
+			if (confirm(`Title is ${title}, price is ${price} and image source is ${imgSource}`)) {
+				var site = '?title=' + title + '&price=' + price + '&img_src=' + imgSource;
+				alert(site);
+			}
+
+
+		})
+	</script>
+	<script>
+		$(document).ready(function () {
+			var url_string = window.location.href;
+			var url = new URL(url_string);
+			var title = url.searchParams.get("title");
+			var oldtitle = title.replace(/-/g, ' ');
+			var price = ('\u20B1 ') + url.searchParams.get("price");
+			var img_src = '../' + url.searchParams.get("img_src");
+			var big_image = document.getElementById('big_image').src;
+			var yellow = "Yellow Phone"; var old = "Black Phone";
+			var pixel = "Pixel Phone"; var old = "Old Phone";
+			var old = "Old Phone";
+			var hash = {};
+			var x = document.getElementsByClassName("details_name");
+			var y = document.getElementsByClassName("details_price");
+			x[0].innerText = oldtitle;
+			y[0].innerText = price;
+			// Imager!
+			hash['Old-Phone'] = "images/smart/sm1.png";
+			hash['Old-Phone1'] = "images/smart/sm1.png";
+			hash['Old-Phone2'] = "images/smart/no-cache.png";
+			hash['Old-Phone3'] = "images/smart/no-cache.png";
+			hash['Old-Phone4'] = "images/smart/no-cache.png";
+
+			hash['Gold-Phone'] = "images/smart/sm2.png";
+			hash['Gold-Phone1'] = "images/smart/sm2.png";
+			hash['Gold-Phone2'] = "images/smart/sm2a.jpg";
+			hash['Gold-Phone3'] = "images/smart/sm2b.jpg";
+			hash['Gold-Phone4'] = "images/smart/sm2c.jpg";
+
+			hash['Black-Phone'] = "images/smart/sm3.png";
+			hash['Black-Phone1'] = "images/smart/sm3.png";
+			hash['Black-Phone2'] = "images/smart/sm3a.jpg";
+			hash['Black-Phone3'] = "images/smart/sm3b.jpg";
+			hash['Black-Phone4'] = "images/smart/sm3c.jpg";
+
+			hash['Pixel-Phone'] = "images/smart/sm4.png";
+			hash['Pixel-Phone1'] = "images/smart/sm4.png";
+			hash['Pixel-Phone2'] = "images/smart/sm4a.jpg";
+			hash['Pixel-Phone3'] = "images/smart/sm4b.jpg";
+			hash['Pixel-Phone4'] = "images/smart/sm4d.jpg";
+
+			hash['Dell-Inspiron'] = "images/laptop/sm1.png";
+			hash['Dell-Inspiron1'] = "images/laptop/sm1.png";
+			hash['Dell-Inspiron2'] = "images/laptop/no-cache.png";
+			hash['Dell-Inspiron3'] = "images/laptop/no-cache.png";
+			hash['Dell-Inspiron4'] = "images/laptop/no-cache.png";
+
+			hash['Asus-Vivo'] = "images/laptop/sm2.png";
+			hash['Asus-Vivo1'] = "images/laptop/sm2.png";
+			hash['Asus-Vivo2'] = "images/laptop/sm2a.jpg";
+			hash['Asus-Vivo3'] = "images/laptop/sm2b.jpg";
+			hash['Asus-Vivo4'] = "images/laptop/sm2c.jpg";
+
+			hash['Windows-Tab'] = "images/laptop/sm3.png";
+			hash['Windows-Tab1'] = "images/laptop/sm3.png";
+			hash['Windows-Tab2'] = "images/laptop/sm3a.jpg";
+			hash['Windows-Tab3'] = "images/laptop/sm3b.jpg";
+			hash['Windows-Tab4'] = "images/laptop/sm3c.jpg";
+
+			hash['Alienware-Station'] = "images/laptop/sm4.png";
+			hash['Alienware-Station1'] = "images/laptop/sm4.png";
+			hash['Alienware-Station2'] = "images/laptop/sm4a.jpg";
+			hash['Alienware-Station3'] = "images/laptop/sm4b.jpg";
+			hash['Alienware-Station4'] = "images/laptop/sm4c.jpg";
+			var src;
+			var def = "../images/smart/no-cache.png";
+			if (img_src === null) {
+				$('#big_image').attr({
+					'src': def,
+					'data-image': def
+				});
+				$('#sm_image1').attr({
+					'src': def,
+					'data-image': def
+				});
+				$('#sm_image2').attr({
+					'src': def,
+					'data-image': def
+				});
+				$('#sm_image3').attr({
+					'src': def,
+					'data-image': def
+				});
+				$('#sm_image4').attr({
+					'src': def,
+					'data-image': def
+				});
+			} else {
+				src = hash[title];
+				$('#big_image').attr('src', src);
+				var i;
+				for (i = 1; i < 5; i++) {
+					var nm = "#sm_image"; // For Map
+					var main_val = title + i; // For Map
+					var sub_val = nm + i;
+					src = hash[main_val];
+					$(sub_val).closest('div').attr('data-image', src);
+					$(sub_val).attr('src', src);
+				}
+				initImage();
+
+			}
+			// Descriptor!
+
+		});
+	</script>
+	<script src="js/product.js"></script>
+</body>
+
+</html>

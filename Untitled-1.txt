@@ -28,3 +28,13 @@ function showDetails(animal) {
 
 </body>
 </html>
+
+
+
+               //  var parentEls = $product.children()
+                //                                   .map(function() {
+                //                                     return this.tagName;
+                //                                   })
+                //                                   .get()
+                //                                   .join( ", " );
+                //                                 $( "b" ).append( "<strong>" + parentEls + "</strong>" );

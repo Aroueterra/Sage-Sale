@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/cat.css">
+    <link rel="stylesheet" type="text/css" href="css/categories_main.css">
+
+    <link rel="stylesheet" type="text/css" href="css/categories_responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.slim.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="packages/owl/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="packages/owl/owl.theme.default.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24)) - 500;
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="super_container" style="background: rgb(119, 11, 11);">
+        <header class="header">
+            <div class="header_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                                <div class="logo"><a href="#">Sage; </a></div>
+                                <nav class="main_nav">
+                                    <ul>
+                                        <li class="hassubs active">
+                                            <a href="home.html">Home</a> <span class="fas fa-angle-down"></span>
+                                            <ul>
+                                                <li><a href="categories.html">Categories</a></li>
+                                                <li><a href="product.html">Product</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Check out</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hassubs">
+                                            <a href="categories.html">Categories</a> <span
+                                                class="fas fa-angle-down"></span>
+                                            <ul>
+                                                <li><a href="laptops.html">Laptops</a></li>
+                                                <li><a href="categories.html">Components</a></li>
+                                                <li><a href="handhelds.html">Handhelds</a></li>
+                                                <li><a href="categories.html">Software</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Offers</a></li>
+
+                                    </ul>
+                                </nav>
+                                <div class="header_extra ml-auto">
+                                    <div class="shopping_cart">
+                                        <a class="fas fa-shopping-cart" href="cart.html">
+                                            <div> Cart <span> (0) </span></div>
+                                        </a>
+                                    </div>
+                                    <div class="search">
+                                        <div class="search_icon fas fa-search">
+                                        </div>
+                                    </div>
+                                    <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Panel -->
+            <div class="search_panel trans_300">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="search_panel_content d-flex flex-row align-items-center justify-content-end">
+
+                                <input type="text" class="search_input" placeholder="Search" required="required">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Carousel -->
+
+
+        <div class="carousel" style="background: rgb(119, 11, 11);">
+            <div id="carouselExampleCaptions" class="" data-ride="carousel"
+                style="margin-right: 45px; margin-left: 45px; ">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="images/slider8.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="home_content">
+                                <h5 class="home_title" style="color: rgb(233, 18, 18);"> Special Offers </h5>
+                                <p class="home_text" style="color: rgb(223, 223, 223);"> Check back from time to time, or subscribe to our newsletter!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car_overlay"></div>
+                </div>
+            </div>
+        </div>
+        <br> <br>
+
+        <div class='some-page-wrapper' onload="startTime()">
+            <div class='row' style="
+            margin-right: 5px;
+            margin-left: 5px;
+            ">
+                <div class='column'>
+                    <a class='blue-column' href="https://www.asus.com/ph/Phone/ZenFone-5Z-ZS620KL/" style="
+                    margin-right: 3px;
+                    margin-left: 3px;
+                    ">
+                        <span class="badge badge-pill badge-danger fas fa-shopping-bag shadow-lg "> 50% off: Jun 22-27
+                            <div id="timer"></div> </span>
+                    </a>
+                </div>
+                <div class='column' style="
+                margin-right: 3px;
+                margin-left: 3px;
+                ">
+                    <a class='green-column' href="https://www.asus.com/Networking/Blue-Cave/">
+
+                    </a>
+                </div>
+                <div class='column' style="
+                margin-right: 3px;
+                margin-left: 3px;
+                ">
+                    <a class='orange-column' href="https://www.asus.com/ph/Laptops/ASUS-VivoBook-S15-S530UN/">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Products -->
+        <div class = "products">
+        <div class="container" style="background: white;">
+            <div class="row" style="background: white;">
+                <img src="images/offer3.jpg" class="img-responsive" alt="Responsive image" style="max-width: 90vw; min-width: 90vw;">
+                <img src="images/offer1.jpg" class="img-responsive" alt="Responsive image" style="max-width: 90vw; min-width: 90vw;">
+                <img src="images/offer2.jpg" class="img-responsive" alt="Responsive image" style="max-width: 90vw; min-width: 90vw;">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+        <footer>
+            <div class="footer" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Shop and Learn </h3>
+                            <ul>
+                                <li> <a href="#"> Components </a> </li>
+                                <li> <a href="laptops.html"> Laptop </a> </li>
+                                <li> <a href="handhelds.html"> Smart Phones </a> </li>
+                                <li> <a href="#"> Peripherals </a> </li>
+                                <li> <a href="#"> Software </a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Accessories </h3>
+                            <ul>
+                                <li> <a href="#"> Gadgets </a> </li>
+                                <li> <a href="#"> Cases </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> About Sage; </h3>
+                            <ul>
+                                <li> <a href="#"> Investors </a> </li>
+                                <li> <a href="#"> Events </a> </li>
+                                <li> <a href="#"> Contact Sage </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                            <h3> Create an account </h3>
+                            <ul>
+                                <li>
+                                    <div class="input-append newsletter-box text-center">
+                                        <input type="email" class="full text-center" placeholder="Email ">
+                                        <button class="btn  bg-gray" type="button" style="color: black"> SIGN UP <i
+                                                class="fa fa-long-arrow-right"> </i> </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="social">
+                                <li> <a href="#"> <i class=" fab fa-facebook">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fab fa-twitter">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fab fa-google-plus">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fab fa-pinterest">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fab fa-youtube">   </i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </div>
+            <!--/.footer-->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+                    <div class="pull-right">
+                        <ul class="nav nav-pills payments">
+                            <li><i class="fab  fa-cc-visa"> &nbsp; </i></li>
+                            <li><i class="fab fa-cc-mastercard"> &nbsp; </i></li>
+                            <li><i class="fab fa-cc-amex"> &nbsp; </i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/.footer-bottom-->
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.4.1.slim.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="packages/isotope/isotope.pkgd.min.js"></script>
+        <script src="packages/easing/easing.js"></script>
+        <script src="packages/parallax-js-master/parallax.min.js"></script>
+        <script>
+            var $productImages = $('.add-cart');
+
+            $productImages.click(function () {
+                var $this = $(this);
+                var $product = $this.parents('.product');
+
+                var title = $product.find('.product_title a').text();
+                var price = $product.find('.product_price span').text();
+                var imgSource = $product.find('.product_image img').attr('src');
+                title = title.replace(/\s+/g, '-');
+                price = price.replace("$", '');
+                // all values are here, now you can do whatever you want with them
+                if (confirm(`Title is ${title}, price is ${price} and image source is ${imgSource}`)) {
+                    var site = 'product.html' + '?title=' + title + '&price=' + price + '&img_src=' + imgSource;
+                    document.location = site;
+
+                }
+
+
+            })
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".search_input").on("keyup", function (e) {
+                    if (e.keyCode == 13) {
+                        // Retrieve the input field text and reset the count to zero
+                        var filter = $(this).val(), count = 0;
+                        var regex = new RegExp(filter, "i");
+                        // Loop through the comment list
+                        $(".product").each(function () {
+                            var title = $(this).find('.product_title a').text();
+                            // If the list item does not contain the text phrase fade it out
+                            if (title.search(regex) < 0) {
+                                $(this).hide();
+                                // Show the list item if the phrase matches and increase the count by 1
+                            } else {
+                                $(this).show();
+                                count++;
+                            }
+                        });
+                        // Update the count
+                        var numberItems = count;
+
+                    }
+                });
+            });
+
+
+        </script>
+        <script src="js/categories.js"></script>
+</body>
+
+</html>

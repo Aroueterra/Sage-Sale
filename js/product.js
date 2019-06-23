@@ -8,7 +8,9 @@
 2. Set Header
 3. Init Search
 4. Init Menu
-5. Init Isotope
+5. Init Image
+6. Init Quantity
+7. Init Isotope
 
 
 ******************************/
@@ -41,6 +43,8 @@ $(document).ready(function()
 
 	initSearch();
 	initMenu();
+	initImage();
+	initQuantity();
 	initIsotope();
 
 	/* 
@@ -172,11 +176,71 @@ $(document).ready(function()
 		hambActive = false;
 		menuActive = false;
 	}
-	
-	
+
 	/* 
 
-	5. Init Isotope
+	5. Init Image
+
+	*/
+
+	function initImage()
+	{
+		var images = $('.details_image_thumbnail');
+		var selected = $('.details_image_large img');
+
+		images.each(function()
+		{
+			var image = $(this);
+			image.on('click', function()
+			{
+				var imagePath = new String(image.data('image'));
+				selected.attr('src', imagePath);
+				images.removeClass('active');
+				image.addClass('active');
+			});
+		});
+	}
+
+	/* 
+
+	6. Init Quantity
+
+	*/
+
+	function initQuantity()
+	{
+		// Handle product quantity input
+		if($('.product_quantity').length)
+		{
+			var input = $('#quantity_input');
+			var incButton = $('#quantity_inc_button');
+			var decButton = $('#quantity_dec_button');
+
+			var originalVal;
+			var endVal;
+
+			incButton.on('click', function()
+			{
+				originalVal = input.val();
+				endVal = parseFloat(originalVal) + 1;
+				input.val(endVal);
+			});
+
+			decButton.on('click', function()
+			{
+				originalVal = input.val();
+				if(originalVal > 0)
+				{
+					endVal = parseFloat(originalVal) - 1;
+					input.val(endVal);
+				}
+			});
+		}
+	}
+
+	/* 
+
+	7. Init Isotope
 
 	*/
 
@@ -201,12 +265,12 @@ $(document).ready(function()
 	            		var priceEle = $(itemElement).find('.product_price').text().replace( '$', '' );
 	            		return parseFloat(priceEle);
 	            	},
-	            	// name: '.product_name',
-	            	name: function(itemElement)
+	            	name: '.product_name',
+	            	stars: function(itemElement)
 	            	{
-	            		var starsEle = $(itemElement).find('.product_title').text();
-	            		// var stars = starsEle.attr("data-rating");
-	            		return starsEle;
+	            		var starsEle = $(itemElement).find('.rating');
+	            		var stars = starsEle.attr("data-rating");
+	            		return stars;
 	            	}
 	            },
 	            animationOptions:
@@ -216,31 +280,25 @@ $(document).ready(function()
 	                queue: false
 	            }
 	        });
-
-	        // Sort based on the value from the sorting_type dropdown
-	        sortingButtons.each(function()
-	        {
-	        	$(this).on('click', function()
-	        	{
-	        		var parent = $(this).parent().parent().find('.sorting_text');
-		        		parent.text($(this).text());
-		        		var option = $(this).attr('data-isotope-option');
-		        		option = JSON.parse( option );
-	    				grid.isotope( option );
-	        	});
-	        });
 		}
 	}
 
-	document.getElementsByClassName("product")[0].click(function(){ alert($(this).index()); });
-	document.getElementsByClassName("product")[0].onclick = function() {
-	var def = document.getElementsByClassName("product_image")[0].index.getAttribute("value");
-	var def2 = document.getElementsByClassName("product_")[0].getAttribute("value");
-	alert (def);
-	};
-	function clickSend(){
-		catImage.onclick = function () {
-			catImageValue.innerHTML = "Value = " + catImage.getAttribute("value");
-		};
-	}
 });
+
+function initImage2()
+{
+	var images = $('.details_image_thumbnail');
+	var selected = $('.details_image_large img');
+
+	images.each(function()
+	{
+		var image = $(this);
+		image.on('click', function()
+		{
+			var imagePath = new String(image.data('image'));
+			selected.attr('src', imagePath);
+			images.removeClass('active');
+			image.addClass('active');
+		});
+	});
+}
