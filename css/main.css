@@ -29,6 +29,25 @@
 /*********************************
 2. Body and some general stuff
 *********************************/
+@font-face {
+	font-family: "Caviar";
+	src: url("../fonts/CaviarDreams.ttf");
+	src: 
+	url("../fonts/CaviarDreams.ttf") format("woff"),
+	url("../fonts/CaviarDreams_Bold.otf") format("opentype"),
+	}
+	@font-face {
+		font-family: "Lightyears";
+		src: url("../fonts/Lightyears.otf");
+		src: 
+		url("../fonts/Lightyears.otf") format("opentype"),
+		url("../fonts/Lightyears.woff") format("woff"),
+
+		}
+		#logo-main{
+			font-family: 'Lightyears';
+		}
+
 
 *
 {
@@ -37,6 +56,8 @@
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	font-family:'Quicksand', sans-serif;
+	/* font-family:'Quicksand', sans-serif; */
 }
 body
 {
@@ -1206,10 +1227,6 @@ section
 	background: #FFFFFF;
 	z-index: 2;
 }
-.icon_box_row
-{
-
-}
 .icon_box
 {
 	width: 100%;
@@ -1242,7 +1259,7 @@ section
 10. Newsletter
 *********************************/
 
-.newsletter
+/* .newsletter
 {
 	width: 100%;
 	background: #FFFFFF;
@@ -1341,7 +1358,7 @@ section
 .newsletter_button:hover span
 {
 	color: #FFFFFF;
-}
+} */
 
 /*********************************
 11. Footer

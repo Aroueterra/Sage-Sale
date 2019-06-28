@@ -1,5 +1,19 @@
 
+@font-face {
+  font-family: "Lightyears";
+  src: url("../fonts/Lightyears.otf");
+  src: 
+  url("../fonts/Lightyears.otf") format("opentype"),
+  url("../fonts/Lightyears.woff") format("woff"),
 
+  }
+  #logo-main{
+    font-family: 'Lightyears';
+  }
+
+  *{
+    font-family:'Quicksand', sans-serif;
+  }
 .single {
     padding: 30px 15px;
     margin-top: 40px;

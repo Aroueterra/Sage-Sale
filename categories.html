@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/cat.css">
     <link rel="stylesheet" type="text/css" href="css/categories_main.css">
-    
+
     <link rel="stylesheet" type="text/css" href="css/categories_responsive.css">
     <link rel="stylesheet" type="text/css" href="css/all.css" rel="stylesheet">
     <script src="js/jquery-3.4.1.slim.js"></script>
@@ -64,10 +64,10 @@
                     <div class="row">
                         <div class="col">
                             <div class="header_content d-flex flex-row align-items-center justify-content-start">
-                                <div class="logo"><a href="#">Sage; </a></div>
-                                <nav class="main_nav">
+                                    <div class="logo"><a href="#" id="logo-main">Emporium; </a></div>
+                                    <nav class="main_nav">
                                     <ul>
-                                        <li class="hassubs active">
+                                        <li class="hassubs">
                                             <a href="home.html">Home</a> <span class="fas fa-angle-down"></span>
                                             <ul>
                                                 <li><a href="categories.html">Categories</a></li>
@@ -76,7 +76,7 @@
                                                 <li><a href="checkout.html">Check out</a></li>
                                             </ul>
                                         </li>
-                                        <li class="hassubs">
+                                        <li class="hassubs active">
                                             <a href="categories.html">Categories</a> <span
                                                 class="fas fa-angle-down"></span>
                                             <ul>
@@ -87,6 +87,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="offers.html">Offers</a></li>
+                                        <li><a href="about.html">About Emporium</a></li>
+                                        <li><a href="contact.html"> <span class="fas fa-mail-bulk"></span> </a></li>
 
                                     </ul>
                                 </nav>
@@ -136,7 +138,8 @@
                         <div class="carousel-caption d-none d-md-block">
                             <div class="home_content">
                                 <h5 class="home_title" style="color: rgb(255, 255, 255);"> Categories: </h5>
-                                <p class="home_text" style="color: rgb(223, 223, 223);"> Find all that you need, when you need it.</p>
+                                <p class="home_text" style="color: rgb(223, 223, 223);"> Find all that you need, when
+                                    you need it.</p>
                             </div>
                         </div>
                     </div>
@@ -184,7 +187,7 @@
 
 
         <!-- Products -->
-        <div class="carousel" >
+        <div class="carousel">
             <div id="carouselExampleCaptions" class="" data-ride="carousel"
                 style="margin-right: 45px; margin-left: 45px; ">
                 <div class="carousel-inner">
@@ -193,8 +196,9 @@
                         <img src="images/categories_slider1.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="home_content">
-                                <h5 class="home_title"style="color: #F56469;"> Smart Phones; </h5>
-                                <button type="button" onclick="location.href='handhelds.html'" class="btn btn-outline-warning btn-block"> GO </button>
+                                <h5 class="home_title" style="color: #F56469;"> Smart Phones; </h5>
+                                <button type="button" onclick="location.href='handhelds.html'"
+                                    class="btn btn-outline-warning btn-block"> GO </button>
                             </div>
                         </div>
                     </div>
@@ -208,8 +212,9 @@
                         <div class="carousel-caption d-none d-md-block">
                             <div class="home_content">
                                 <h5 class="home_title" style="color: darkturquoise;"> Laptops; </h5>
-     
-                                    <button type="button" onclick="location.href='laptops.html'" class="btn btn-outline-primary btn-block"> GO </button>
+
+                                <button type="button" onclick="location.href='laptops.html'"
+                                    class="btn btn-outline-primary btn-block"> GO </button>
                             </div>
                         </div>
                     </div>
@@ -223,8 +228,9 @@
                         <div class="carousel-caption d-none d-md-block">
                             <div class="home_content">
                                 <h5 class="home_title" style="color: rgb(127, 197, 142);"> Components; </h5>
-     
-                                    <button type="button" onclick="location.href='laptops.html'" class="btn btn-outline-success btn-block"> GO </button>
+
+                                <button type="button" onclick="location.href='laptops.html'"
+                                    class="btn btn-outline-success btn-block"> GO </button>
                             </div>
                         </div>
                     </div>
@@ -238,8 +244,9 @@
                         <div class="carousel-caption d-none d-md-block">
                             <div class="home_content">
                                 <h5 class="home_title" style="color: rgb(255, 255, 255);"> Software; </h5>
-     
-                                    <button type="button" onclick="location.href='laptops.html'" class="btn btn-outline-light btn-block"> GO </button>
+
+                                <button type="button" onclick="location.href='laptops.html'"
+                                    class="btn btn-outline-light btn-block"> GO </button>
                             </div>
                         </div>
                     </div>
@@ -259,27 +266,19 @@
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> Shop and Learn </h3>
                         <ul>
-                            <li> <a href="#"> Components </a> </li>
+                            <li> <a href="categories.html"> Components </a> </li>
                             <li> <a href="laptops.html"> Laptop </a> </li>
                             <li> <a href="handhelds.html"> Smart Phones </a> </li>
-                            <li> <a href="#"> Peripherals </a> </li>
-                            <li> <a href="#"> Software </a> </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                        <h3> Accessories </h3>
-                        <ul>
-                            <li> <a href="#"> Gadgets </a> </li>
-                            <li> <a href="#"> Cases </a> </li>
+                            <li> <a href="categories.html"> Software </a> </li>
                         </ul>
                     </div>
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                        <h3> About Sage; </h3>
-                        <ul>
-                            <li> <a href="#"> Investors </a> </li>
-                            <li> <a href="#"> Events </a> </li>
-                            <li> <a href="#"> Contact Sage </a> </li>
+                            <h3> About Emporium; </h3>
+                            <ul>
+                                <li> <a href="#"> Investors </a> </li>
+                                <li> <a href="about.html"> About Emporium </a> </li>
+                                <li> <a href="contact.html"> Contact Emporium </a> </li>
+                            </ul>
                         </ul>
                     </div>
                     <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
@@ -310,7 +309,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+                    <p class="pull-left"> Copyright © Emporium; E-commerce proj. 2019. All right reserved. </p>
                 <div class="pull-right">
                     <ul class="nav nav-pills payments">
                         <li><i class="fab  fa-cc-visa"> &nbsp; </i></li>

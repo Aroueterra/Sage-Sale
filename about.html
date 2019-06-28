@@ -18,10 +18,53 @@
     <link rel="stylesheet" type="text/css" href="css/categories_responsive.css">
     <link rel="stylesheet" type="text/css" href="css/all.css" rel="stylesheet">
     <script src="js/jquery-3.4.1.slim.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/about.css" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="packages/owl/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="packages/owl/owl.theme.default.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        /* Create three equal columns that floats next to each other */
+        .columns {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 1700px;
+            /* Should be removed. Only for demonstration */
+            background: whitesmoke;
+        }
+
+        /* Clear floats after the columns */
+        .rows:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #menu {
+            display: flex;
+            font-family: Arial;
+            font-size: 22px;
+            width: calc(100vw - 60px);
+            left: 1px;
+            text-align: justify;
+            text-justify: inter-word;
+            position: fixed;
+            justify-content: space-between;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 30px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
@@ -57,7 +100,7 @@
 
 <body>
     <!-- Header -->
-    <div class="super_container" style="background: rgb(119, 11, 11);">
+    <div class="super_container" style="background: rgb(149, 217, 248);">
         <header class="header">
             <div class="header_container">
                 <div class="container">
@@ -67,7 +110,7 @@
                                     <div class="logo"><a href="#" id="logo-main">Emporium; </a></div>
                                     <nav class="main_nav">
                                     <ul>
-                                        <li class="hassubs ">
+                                        <li class="hassubs">
                                             <a href="home.html">Home</a> <span class="fas fa-angle-down"></span>
                                             <ul>
                                                 <li><a href="categories.html">Categories</a></li>
@@ -86,8 +129,8 @@
                                                 <li><a href="categories.html">Software</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="offers.html" class="active">Offers</a></li>
-                                        <li><a href="about.html">About Emporium</a></li>
+                                        <li><a href="offers.html">Offers</a></li>
+                                        <li><a href="about.html" class="active">About Emporium</a></li>
                                         <li><a href="contact.html"> <span class="fas fa-mail-bulk"></span> </a></li>
 
                                     </ul>
@@ -128,18 +171,22 @@
         <!-- Carousel -->
 
 
-        <div class="carousel" style="background: rgb(119, 11, 11);">
+        <div class="carousel">
             <div id="carouselExampleCaptions" class="" data-ride="carousel"
                 style="margin-right: 45px; margin-left: 45px; ">
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
-                        <img src="images/slider8.jpg" class="d-block w-100" alt="...">
+                        <img src="images/index_slider4.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="home_content">
-                                <h5 class="home_title" style="color: rgb(233, 18, 18);"> Special Offers </h5>
-                                <p class="home_text" style="color: rgb(223, 223, 223);"> Check back from time to time,
-                                    or subscribe to our newsletter!</p>
+                                <h5 class="home_title" style="color: rgb(255, 255, 255);">Emporium Technologies </h5>
+                                <p class="home_text" style="color: rgb(255, 255, 255);"> Emporium is passionate about
+                                    technology and driven by innovation. We dream, we dare </p>
+                                <p class="home_text2" style="color: rgb(255, 255, 255);"> and we strive to create an
+                                    effortless and joyful digital life for everyone. We're always </p>
+                                <p class="home_text3" style="color: rgb(255, 255, 255);"> in search of incredible ideas
+                                    and experiences, and we aspire to deliver the incredible in everything we do. </p>
                             </div>
                         </div>
                     </div>
@@ -184,22 +231,107 @@
 
 
 
-
-
-        <!-- Products -->
-        <div class="products">
-            <div class="container" style="background: white;">
-                <div class="row" style="background: white;">
-                    <img src="images/offer3.jpg" class="img-responsive" alt="Responsive image"
-                        style="max-width: 90vw; min-width: 90vw;">
-                    <img src="images/offer1.jpg" class="img-responsive" alt="Responsive image"
-                        style="max-width: 90vw; min-width: 90vw;">
-                    <img src="images/offer2.jpg" class="img-responsive" alt="Responsive image"
-                        style="max-width: 90vw; min-width: 90vw;">
+        <div class="rows">
+            <div class="columns" style="background-color:rgb(255, 255, 255);">
+                <h2>OUR STORY</h2>
+                <br>
+                <br>
+                <p>Established in 1989, Emporium is a multinational company known for the world’s best motherboards and
+                    high-quality personal computers, monitors, graphics cards, routers and other technology solutions.
+                </p>
+                <br>
+                <br>
+                <p>Today, Emporium is designing and building next-generation smart technologies to provide incredible
+                    experiences that enhance the lives of people everywhere.</p>
+                <br>
+                <br>
+                <div class="card text-center text-white bg-info mb-3"
+                    style="width: 18rem; margin-left:60px; margin-right: 30px;">
+                    <div class="card-body">
+                        <img class="card-img-top" src="images/product_4.jpg" alt="Card image cap">
+                        <h5 class="card-title" style="margin-top: 20px; font-size: 18px;"> Our first product... </h5>
+                        <p class="card-text text-white"> Learn the rich history of our very first product; even today,
+                            our success feels unreal, almost as if we were just invented on the spot for a school
+                            project or something...</p>
+                        <button type="button" class="btn btn-light" style="margin-top: 20px; "> Learn More </button>
+                    </div>
                 </div>
 
             </div>
+            <div class="columns" style="background-color:rgb(255, 255, 255);">
+                <h2>OUR PEOPLE</h2>
+                <br>
+                <br>
+                <p> <b>AUGUST BRYAN</b> <br>
+                    CHAIRMAN
+                    AUGUST BRYAN has served as the Chairman of EMPORIUM since 1993, and until 2007 he also served as the
+                    Chief Executive Officer.
+                    As Chairman, Mr. AUGUST guides the company’s vision, corporate culture, and innovation strategies.
+                    Under his leadership, EMPORIUM has become an internationally recognized technology leader that ranks
+                    No.
+                    1 in worldwide sales of motherboards and No.3 in consumer notebooks. For the last several years,
+                    Fortune magazine has named EMPORIUM as one of the World’s Most Admired Companies. Since 2013,
+                    EMPORIUM has
+                    also been recognized as the most valuable international brand from the Philippines for five
+                    consecutive
+                    years, according to Interbrand.
+                </p>
+                <br>
+                <br>
+                <p>Today, Emporium is designing and building next-generation smart technologies to provide incredible
+                    experiences that enhance the lives of people everywhere.</p>
+                <br>
+                <br>
+                <div class="card text-center text-white bg-info mb-3"
+                    style="width: 18rem; margin-left:60px; margin-right: 30px;">
+                    <div class="card-body">
+                        <img class="card-img-top" src="images/slider7.jpg" alt="Card image cap"
+                            style="background: black">
+                        <h5 class="card-title" style="margin-top: 20px; font-size: 18px;"> Our Chairman... </h5>
+                        <p class="card-text text-white"> Learn the rich history of our very first chairman; even today,
+                            our success feels unreal, almost as if we were just invented on the spot for a school
+                            project or something...</p>
+                        <button type="button" class="btn btn-light" style="margin-top: 20px; "> Learn More </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="columns" style="background-color:rgb(255, 255, 255);">
+                <h2>OUR GOALS</h2>
+                <br>
+                <br>
+                <p>Emporium proudly sponsors programs and initiatives that benefit communities around the world. These
+                    efforts represent another way that Emporium honors our brand promise as we strive to provide a
+                    joyful
+                    digital life to people everywhere.
+                </p>
+                <br>
+                <br>
+                <p>Emporium supports hundreds of employee volunteers each year, as they participate in philanthropic
+                    initiatives in countries such as Indonesia, India, Thailand, Philippines, Vietnam, Cambodia, and
+                    Tanzania. Assistance is based on local needs, and volunteers provide support in various ways.</p>
+                <br>
+                <br>
+                <div class="card text-center text-white bg-info mb-3"
+                    style="width: 18rem; margin-left:60px; margin-right: 30px;">
+                    <div class="card-body">
+                        <img class="card-img-top" src="images/product_3.jpg" alt="Card image cap">
+                        <h5 class="card-title" style="margin-top: 20px; font-size: 18px;"> Our first goal... </h5>
+                        <p class="card-text text-white"> We aim to beat sony as the number 1 console retailer; even
+                            today,
+                            our success feels unreal, almost as if we were just invented on the spot for a school
+                            project or something...</p>
+                        <button type="button" class="btn btn-light" style="margin-top: 20px; "> Learn More </button>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+
+
+
+
     </div>
 
 
@@ -253,7 +385,7 @@
         <div class="footer-bottom">
             <div class="container">
                     <p class="pull-left"> Copyright © Emporium; E-commerce proj. 2019. All right reserved. </p>
-                <div class="pull-right">
+                    <div class="pull-right">
                     <ul class="nav nav-pills payments">
                         <li><i class="fab  fa-cc-visa"> &nbsp; </i></li>
                         <li><i class="fab fa-cc-mastercard"> &nbsp; </i></li>
@@ -273,6 +405,11 @@
     <script src="packages/isotope/isotope.pkgd.min.js"></script>
     <script src="packages/easing/easing.js"></script>
     <script src="packages/parallax-js-master/parallax.min.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
     <script>
         var $productImages = $('.add-cart');
 
