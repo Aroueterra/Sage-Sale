@@ -216,7 +216,7 @@ display:block;
 	width: calc((100% - 60px) / 3);
 	height: 50px;
 	padding-left: 25px;
-	border: solid 1px #e5e5e5;
+	border: solid 1px #8a8a8a;
 	border-radius: 5px;
 	outline: none;
 	color: #0e8ce4;
@@ -229,12 +229,12 @@ display:block;
 .input_field:focus,
 .text_field:focus
 {
-	border-color: #b2b2b2;
+	border-color: #4b4b4b;
 }
 .input_field:hover,
 .text_field:hover
 {
-	border-color: #b2b2b2;
+	border-color: #4b4b4b;
 }
 .input_field::-webkit-input-placeholder,
 .text_field::-webkit-input-placeholder
@@ -277,7 +277,7 @@ display:block;
 	height: 160px;
 	padding-left: 25px;
 	padding-top: 15px;
-	border: solid 1px #e5e5e5;
+	border: solid 1px #868686;
 	border-radius: 5px;
 	color: #0e8ce4;
 	outline: none;

@@ -118,6 +118,7 @@ $(document).ready(function()
 					$('.menu').removeClass('active');
 					menuActive = false;
 				}
+				
 			});
 
 			//Handle page menu

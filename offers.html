@@ -57,7 +57,7 @@
 
 <body>
     <!-- Header -->
-    <div class="super_container" style="background: rgb(119, 11, 11);">
+    <div class="super_container" style="background: rgb(119, 11, 11); overflow-y: auto; ">
         <header class="header">
             <div class="header_container">
                 <div class="container">
@@ -124,7 +124,35 @@
                 </div>
             </div>
         </header>
+<!-- Menu -->
 
+<div class="menu menu_mm trans_300">
+    <div class="menu_container menu_mm">
+        <div class="page_menu_content">
+                        
+            <div class="page_menu_search menu_mm">
+                <form action="#">
+                    <input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
+                </form>
+            </div>
+            <ul class="page_menu_nav menu_mm">
+                <li class="page_menu_item menu_mm">
+                    <a href="home.html">Home<i ></i></a>
+
+                </li>
+                <li class="page_menu_item menu_mm">
+                    <a href="categories.html">Categories<i ></i></a>
+
+                </li>
+                <li class="page_menu_item menu_mm"><a href="offers.html">Offers<i class="fa fa-angle-down"></i></a></li>
+                <li class="page_menu_item menu_mm"><a href="about.html">About Emporium<i class="fa fa-angle-down"></i></a></li>
+                <li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+</div>
         <!-- Carousel -->
 
 
@@ -188,8 +216,12 @@
 
         <!-- Products -->
         <div class="products">
-            <div class="container" style="background: white;">
-                <div class="row" style="background: white;">
+            <div class="container" style="background: white; margin-left: auto;
+            margin-right: auto;
+            ">
+                <div class="row" style="background: white; 
+            overflow-x: scroll;
+            width: 100%;">
                     <img src="images/offer3.jpg" class="img-responsive" alt="Responsive image"
                         style="max-width: 90vw; min-width: 90vw;">
                     <img src="images/offer1.jpg" class="img-responsive" alt="Responsive image"
@@ -217,7 +249,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                            <h3> About Emporium; </h3>
+                            <h3> About us; </h3>
                             <ul>
                                 <li> <a href="#"> Investors </a> </li>
                                 <li> <a href="about.html"> About Emporium </a> </li>

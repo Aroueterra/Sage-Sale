@@ -2084,6 +2084,12 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+
+
+#hov:hover .slideme {
+	
+  }
+
 /* .newsletter_button::after
 {
 	content: '';
@@ -2114,3 +2120,4 @@ section
 {
 	color: #FFFFFF;
 } */
+
